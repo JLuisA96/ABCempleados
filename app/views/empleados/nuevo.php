@@ -46,10 +46,10 @@ tr:hover td { background: #d0dafd; color: #339; }
 		}
 
 	</style>
-    <? if (count($error)){ ?>
+    <?php if (count($error)){ ?>
             <div class="errors">
                 <ul>
-                    <?foreach($error as $f => $v){ ?>
+                    <?php foreach($error as $f => $v){ ?>
                         <li>El campo '<?=$f?>' es requerido</li>
                     <?} ?>
                 </ul>
@@ -89,8 +89,8 @@ tr:hover td { background: #d0dafd; color: #339; }
     		<label for="txt_departamento">Departamento</label>
     		<select name="departamento" id="txt_departamento" >
     			<option value="">Seleccione</option>
-    			<?while($row = $datos_departamentos->fetch_object()){?>
-    				<?if ($row->puesto == $datos_departamentos->departamento){?>
+    			<?php while($row = $datos_departamentos->fetch_object()){?>
+    				<?php if ($row->puesto == $datos_departamentos->departamento){?>
                         <option <?= 'selected';?> value=<?= $row->puesto?>><?= $row->descripcion?></option>
                     <?}else{?>
                         <option value=<?= $row->puesto?>><?= $row->descripcion?></option>

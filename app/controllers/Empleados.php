@@ -2,7 +2,7 @@
 class Empleados{
 
 	function __construct(){
-        require CONTROLLERS . 'Departamentos.php';
+        require CONTROLLERS . 'departamentos.php';
         require MODELS . 'empleado.php';
 
         $this->empleado 	= new empleado();

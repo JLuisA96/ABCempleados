@@ -2,7 +2,7 @@
 class Departamentos{
 	
 	function __construct(){
-        require MODELS.'Departamento.php';
+        require MODELS.'departamento.php';
         $this->departamentos = new Departamento();
     }
 

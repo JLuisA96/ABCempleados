@@ -11,7 +11,7 @@ class Database{
     private $offsetr = 0;
     
     function __construct(){
-        $this->db = new mysqli("localhost","root","","proyecto_empleados");
+        $this->db = new mysqli("localhost","abc","[r5PwW#-42Ov.qXju6}AVc],?klz3!Lt","proyecto_empleados");
         if($this->db->connect_errno)
                 die("Error al conectar a la base de datos");
     }

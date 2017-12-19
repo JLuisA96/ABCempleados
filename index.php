@@ -2,7 +2,7 @@
 file_exists("app/core/autoload.php") or die("Error al iniciar MVC");
 include 'app/core/autoload.php';
 
-$DF_CONTROLLER = 'empleados';
+$DF_CONTROLLER = 'Empleados';
 $DF_ACTION = 'listado';
 $URI =  isset($_SERVER['PATH_INFO'])?explode('/',$_SERVER['PATH_INFO']):[0,$DF_CONTROLLER,$DF_ACTION]; //Obtiene las rutas de la url
 
